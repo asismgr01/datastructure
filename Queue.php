@@ -46,7 +46,7 @@
         else{
         	$num = $this->array[$this->front];
         	$this->front += 1;
-        	if ($this->front > sizeof($this->array)-1 ) {
+        	if ($this->front > $this->rear ) {
         		$this->front = -1;
         		$this->rear = -1;
         	}
