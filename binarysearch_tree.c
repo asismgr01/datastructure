@@ -82,6 +82,15 @@ struct binary_search_tree* insert(struct binary_search_tree* head,int data){
     }
     return y;
 }
+/*function to traverse binary search tree inorder traversal*/
+void inordertraversal(struct binary_search_tree* head){
+    if(head == NULL){
+        return;
+    }
+    inordertraversal(head->left);
+    printf("%d,",head->data );
+    inordertraversal(head->right);
+}
 /*function to traverse binary search tree(breath first search)*/
 /*
 void breath_first_traversal(struct binary_search_tree* head){
